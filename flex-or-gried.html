@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+        }
+        .box{
+            background-color: rgb(116, 116, 238);
+            color: aliceblue;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        @media screen and (max-width:476px){
+            .container{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+        @media screen and (min-width:476px) and (max-width:776px){
+            .container{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Flex or Grid Responsive</h2>
+    <div class="container">
+        <div class="box">
+            <h3>First Box</h3>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam consequatur ipsa animi mollitia totam unde libero aperiam possimus dolor maxime ea at placeat laboriosam doloribus, quisquam velit error? Laboriosam, id.
+            </p>
+        </div>
+        <div class="box">
+            <h3>seconde Box</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed inventore vel, amet cum officiis est dolorum dicta vitae aspernatur neque sint natus tenetur minima accusantium veniam dolores ipsa? Corporis, dolorum.</p>
+        </div>
+        <div class="box">
+            <h3>seconde Box</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed inventore vel, amet cum officiis est dolorum dicta vitae aspernatur neque sint natus tenetur minima accusantium veniam dolores ipsa? Corporis, dolorum.</p>
+        </div>
+        <div class="box">
+            <h3>seconde Box</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed inventore vel, amet cum officiis est dolorum dicta vitae aspernatur neque sint natus tenetur minima accusantium veniam dolores ipsa? Corporis, dolorum.</p>
+        </div>
+    </div>
+</body>
+</html>
